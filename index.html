@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+		var deviceWidth = parseInt(window.screen.width);  //获取当前设备的屏幕宽度
+		var deviceScale = deviceWidth / 640;  //得到当前设备屏幕与640之间的比例，之后我们就可以将网页宽度固定为640px
+		var ua = navigator.userAgent;
+		//获取当前设备类型（安卓或苹果）
+		if (/Android (\d+\.\d+)/.test(ua)) {
+			var version = parseFloat(RegExp.$1);
+			if (version > 2.3) {
+				document.write('<meta name="viewport" content="width=640,initial-scale=' + deviceScale + ', minimum-scale = ' + deviceScale + ', maximum-scale = ' + deviceScale + ', target-densitydpi=device-dpi">');
+			} else {
+				document.write('<meta name="viewport" content="width=640,initial-scale=0.75,maximum-scale=0.75,minimum-scale=0.75,target-densitydpi=device-dpi" />');
+			}
+		} else {
+			document.write('<meta name="viewport" content="width=640, user-scalable=no">');
+		}
+		</script>
+		
+		<meta charset = 'UTF-8'>
+		<title>这是一个让您完全便捷自主选择的装修工具</title>
+		<style type='text/css'>
+			.body-1{
+			text-align:center;
+			
+			}
+			
+			.body-1-1{
+			width:60%;
+			padding:10px 10px;
+			margin:5px auto;
+			
+			}
+			
+			.yetou{
+			text-align:left;
+			
+			}
+			.logo{
+			width:150px;
+			height:150px;
+			margin-left:5px;
+			margin-top:3px;
+			margin-bottom:3px;
+			
+			}
+			
+			div{
+			
+			
+			}
+			
+			.pinpaibiao{
+			margin:20px auto;
+			}
+			
+			.pinpaibiao td{
+			background-color:#A9F5BC;
+			text-align:center;
+			height:50px;
+			width:100px;
+			}
+			a{
+			text-decoration:none;
+			}
+			
+			img{
+			width:62px;
+			height:62px;
+			
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<div class = 'body-1'>
+			<div class = 'yetou'>
+				<img class = 'logo' src = 'img/logo.jpg' />
+			</div>
+			<div class = 'body-1-1'>
+
+				<div class = 'text-1'>
+					<p>当在计划装修时你会发现可以有很多选择 （ ;</p>
+					<p><font color = '#FF0000' size = '5'>“记着有个亲戚....”</font></p>
+					<p><font color = '#DF7401' size = '4'>“听说有个同学....”</font></p>
+					<p><font color = '#F781F3' size = '5'>“小区门口那有家公司....”</font></p>
+					<p><font color = '#01DF3A' size = '4'>“有个平台好像不错...”</font></p>
+				</div>
+				
+				<p>以下是我们整理目前常见的装修平台</p>
+				<table class = 'pinpaibiao'>
+					<tr>
+						<td><a target = '_blank' href = 'http://sz.to8to.com/'>土巴兔</a></td>
+						<td><a target = '_blank' href = 'http://sz.to8to.com/'>土巴兔</a></td>
+						<td><a target = '_blank' href = 'http://sz.to8to.com/'>土巴兔</a></td>
+					</tr>
+					<tr>
+					</tr>
+					<tr>
+						<td><a target = '_blank' href = 'http://sz.to8to.com/'>土巴兔</a></td>
+						<td><a target = '_blank' href = 'http://sz.to8to.com/'>土巴兔</a></td>
+						<td><a target = '_blank' href = 'http://sz.to8to.com/'>土巴兔</a></td>
+					</tr>
+				</table>
+				
+				<p> 或者 你可以 </p>
+				
+				<a target = '_blank' href = 'https://www.baidu.com/s?wd=%E6%9C%AC%E5%9C%B0%E8%A3%85%E4%BF%AE%E5%85%AC%E5%8F%B8%E5%93%AA%E5%AE%B6%E5%A5%BD%E4%B8%80%E4%BA%9B'>
+				
+					<p>百度：“本地装修公司哪家好一些”</p>
+				
+				</a>
+			</div>
+			<!--  别人家的  -->
+			
+			
+			<p><font color = 'green' size = '7'>OR </font> <font color = 'green' size = '5'> 直接选择我们全新推出的清包装修工具 </font></p>
+			<p><font size = '2'>（全部过程，我们不会主动要求获取您的电话号码）</font></p>
+			<div style = 'border: 1px solid green;padding:2px 2px;'>
+				<a href = 'shouye.html'>
+					<p>三步 装好房</p>
+					<p>立刻了解</p>
+				</a>
+			</div>
+		</div>
+	</body>
+
+</html>
